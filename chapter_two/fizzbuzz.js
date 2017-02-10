@@ -9,3 +9,14 @@ for (var n = 1; n <= 100; n++) {
   else
     console.log(n)
 }
+
+
+// solution two, from book
+for (var n = 1; n <= 100; n++) {
+  var output = "";
+  if (n % 3 == 0)
+    output += "Fizz";
+  if (n % 5 == 0)
+    output += "Buzz";
+  console.log(output || n);
+}
